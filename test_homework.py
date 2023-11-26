@@ -123,15 +123,3 @@ def go_to_companyname_homepage(page_url):
 def find_registration_button_on_login_page(page_url, button_text):
     actual_result = func_print()
     assert actual_result == "Find Registration Button On Login Page [https://companyname.com/login, Register]"
-
-
-
-
-# def time():
-#     time = True
-#     if time:
-#         print(time)
-#     else:
-#         print(f'False: time')
-#
-# time()
