@@ -11,13 +11,13 @@ def check_time(current_time):
         print('Dark theme is disable')
     return is_dark_theme
 
+
 def test_dark_theme_by_time():
     """
     Протестируйте правильность переключения темной темы на сайте в зависимости от времени
     """
     current_time = time(hour=23)
     # TODO переключите темную тему в зависимости от времени суток (с 22 до 6 часов утра - ночь)
-    is_dark_theme = None
 
     is_dark_theme = check_time(current_time)
     print(is_dark_theme)
@@ -42,8 +42,7 @@ def test_dark_theme_by_time_and_user_choice():
     if dark_theme_enabled_by_user:
         is_dark_theme = dark_theme_enabled_by_user
     else:
-        check_time(current_time)
-
+        is_dark_theme = check_time(current_time)
 
     assert is_dark_theme is True
 
@@ -110,6 +109,7 @@ def func_print():
     print(name, attr)
     return f'{name} [{attr}]'
 
+
 def open_browser(browser_name):
     actual_result = func_print()
     assert actual_result == "Open Browser [Chrome]"
@@ -126,4 +126,12 @@ def find_registration_button_on_login_page(page_url, button_text):
 
 
 
-test_readable_function()
+
+# def time():
+#     time = True
+#     if time:
+#         print(time)
+#     else:
+#         print(f'False: time')
+#
+# time()
